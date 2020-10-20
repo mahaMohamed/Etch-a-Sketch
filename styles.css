@@ -1,0 +1,38 @@
+
+
+#name{
+
+ text-align: center;
+ /* margin-bottom: 10px; */
+
+}
+
+
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#sketching-area{
+
+    /* margin-top: 30px; */
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, 1fr); */
+
+}
+
+
+.squares{
+    /* border: 1px solid black; */
+    /* height: 100px;
+    width: 100px; */
+}
