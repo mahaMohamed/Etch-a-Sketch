@@ -54,16 +54,19 @@ function clearGrid() {
     }
 
 
-    let customGridSize = 0; 
+    let customGridSize = 0;
 
-    do{
-         customGridSize = window.prompt("Enter new grid size, max 100");
+    do {
+        customGridSize = window.prompt("Enter new grid size, max 100");
     } while (customGridSize > 100);
 
-    for (let i = 0; i < squareBlocks.length; i++) {
-        sketchingArea.removeChild(squareBlocks[i]);
+    if (customGridSize != null) {
+        for (let i = 0; i < squareBlocks.length; i++) {
+            sketchingArea.removeChild(squareBlocks[i]);
+        }
+        createGrid(customGridSize);
     }
-    createGrid(customGridSize);
+
 
 
 }
