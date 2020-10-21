@@ -1,14 +1,23 @@
 
+@font-face { font-family: play; src: url('ReallyFree-ALwl7.ttf'); } 
+
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  background: url("stationery-near-coffee-cup-and-flower-pots-on-white-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+  overflow: hidden;
 }
 #name {
   text-align: center;
-  margin-bottom: 50px;
   position: relative;
-  right: -20px;
+  right: -200px;
+  font-family: play;
+  font-size: 60px;
+  color: #dc8a3c;
 }
 
 #game {
@@ -16,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 100%;
 }
 
 #sketching-area {
@@ -25,23 +34,30 @@ body {
   border-top: 1px solid black;
   border-left: 1px solid black;
   display: grid;
-
+  align-self: center;
+  position: relative;
+  right: -200px;
 }
 
-
-
-#controls{
-    height: 60px; 
-    width: 500px;
-    display: flex;
-    justify-content: center;
+#controls {
+  height: 60px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
-
-button{
-    height: fit-content;
-    width: fit-content;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: relative;
-    right: -20px;
+button {
+  height: fit-content;
+  width: fit-content;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  right: -200px;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #dc8a3c;
+  /* padding: ; */
+  display: inline-block;
+ 
 }
